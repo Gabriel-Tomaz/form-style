@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+
+    h2{
+        margin-bottom: 24px;
+    }
+
+    form{
+        padding: 24px;
+        min-width: 32vw;
+    }
+}
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    flex: 1;
+
+    label{
+        margin-bottom: 12px;
+        font-weight: 500;
+        color: #424242;
+    }
+    
+    input{
+        padding: 12px;
+        border: solid 1px #E0E0E0;
+        border-radius: 4px;
+
+        &:focus{
+            border: solid 1px #42A5F5;
+            outline: none;
+            box-shadow: 0px 0px 2px #42A5F5;
+        }
+    }
+
+    select {
+        appearance: none;
+        background-color: #FFF;
+        border: solid 1px #E0E0E0 ;
+        margin: 0;
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+        padding: 12px;
+        border-radius: 4px;
+
+        &:focus{
+            border: solid 1px #42A5F5;
+            outline: none;
+            box-shadow: 0px 0px 2px #42A5F5;
+        }
+      }
+
+    button{
+        padding: 12px;
+        border: solid 1px #1E88E5;
+        background-color: #42A5F5;
+        color: #F5F5F5;
+        font-weight: bold;
+        border-radius: 4px;
+        outline: none;
+        max-width: 200px;
+        cursor: pointer;
+    }
+
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+
+    .input-area:nth-child(1){
+        margin-right: 12px;
+    }
+}
